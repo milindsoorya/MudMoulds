@@ -1,5 +1,6 @@
 import styles from "./SlideShow.module.scss";
 import Carousel from "react-bootstrap/Carousel";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function SlideShow({ slides }) {
   return (
@@ -13,8 +14,14 @@ function SlideShow({ slides }) {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>From Pure Mud to Rich Artifacts !</h3>
+              <p>
+                Pottery is the first synthetic material ever created by human.
+                The odyssey from pure mud to organic, durable, ethnic artifacts
+                through hands and souls of artists and collaborators swaddle our
+                cultural legacy and novelty hand in hand. This makes pottery the
+                master of all arts.{" "}
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -25,8 +32,14 @@ function SlideShow({ slides }) {
             />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>Explore the Artifacts & sence the craftsmanship.</h3>
+              <p>
+                From cardinal pottery works to mesmerizing murals, explore the
+                beauty and experience of the artisanship in each artifacts.
+                Reveal your interests in the art form, couple with us to engage
+                in collaborations. Feel free to taste the soul of Mudmoulds and
+                dive into our fascinating art gallery.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -37,9 +50,12 @@ function SlideShow({ slides }) {
             />
 
             <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>Expertice your skills & knowledge.</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Mudmoulds is providing a platform for looming artists to explore
+                more opportunities, practice their skills and learn more
+                craftsmanship with our team. We would love to see the birth of
+                experts in our art.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -51,13 +67,22 @@ function SlideShow({ slides }) {
             />
 
             <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>What it takes to embrace the Organic Lifestyle.</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                The busy life schedule introduced many artificial replacements
+                resulting in toxicity and harmful consequences. It’s time to
+                redefine our way of life. Return to nature and embrace the
+                organic lifestyle and we present you the brand new Mudmoulds to
+                make modern life calmer without compromising your engagements.{" "}
               </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <div className={styles.socialMediaDiv}>
+          <FaFacebookF className={styles.socialMedia} />
+          <FaInstagram className={styles.socialMedia} />
+          <FaYoutube className={styles.socialMedia} />
+        </div>
       </div>
     </>
   );

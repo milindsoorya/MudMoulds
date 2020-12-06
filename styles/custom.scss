@@ -4,11 +4,41 @@ $theme-colors: (
 
 $navbar-dark-color: white;
 
+.navbar {
+  backdrop-filter: blur(2px);
+}
+
 .carousel {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  height: auto;
+
+  .carousel-indicators li {
+    margin: 0px 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+  .carousel-caption {
+    top: 30%;
+    left: 2%;
+    width: 40vw;
+    padding: 20px;
+    user-select: none;
+    text-align: left;
+    h3 {
+      font-size: 4vw;
+    }
+    p {
+      font-size: 1.25vw;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    visibility: hidden;
+  }
 }
 
 @import "~bootstrap/scss/bootstrap";

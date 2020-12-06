@@ -3,7 +3,6 @@ import fetch from "isomorphic-unfetch";
 
 import Card from "../components/Card";
 
-import { SliderData } from "../components/SliderData";
 import SlideShow from "../components/SlideShow";
 
 export default function Home({ movies }) {
