@@ -28,18 +28,23 @@ function ImageSlider({ slides }) {
         <section>
           {SliderData.map((slide, index) => {
             return (
-              <div
-                className={index == current ? styles.active : styles.slide}
-                key={index}
-              >
-                {index === current && (
-                  <img
-                    src={slide.image}
-                    alt="carousal data"
-                    className={styles.image}
-                  />
-                )}
-              </div>
+              <>
+                <div
+                  className={index == current ? styles.active : styles.slide}
+                  key={index}
+                >
+                  {index === current && (
+                    <img
+                      src={slide.image}
+                      alt="carousal data"
+                      className={styles.image}
+                    />
+                  )}
+                </div>
+                <div className={styles.slider_text}>
+                  <h1>From Pure Mud to Rich Artifacts!</h1>
+                </div>
+              </>
             );
           })}
         </section>

@@ -10,25 +10,25 @@ export default function Home({ movies }) {
     <>
       <div className={styles.container}>
         <ImageSlider slides={SliderData} />
-        <div className={styles.card_container}>
+        {/* <div className={styles.card_container}>
           {movies.map((movie) => (
             <Card key={movie.id} movie={movie} />
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
 }
 
-export async function getServerSideProps() {
-  const { API_URL } = process.env;
+// export async function getServerSideProps() {
+//   const { API_URL } = process.env;
 
-  const res = await fetch(`${API_URL}/movies`);
-  const data = await res.json();
+//   const res = await fetch(`${API_URL}/movies`);
+//   const data = await res.json();
 
-  return {
-    props: {
-      movies: data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       movies: data,
+//     },
+//   };
+// }
