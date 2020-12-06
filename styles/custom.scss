@@ -1,0 +1,14 @@
+$theme-colors: (
+  "transparent": rgba(245, 243, 243, 0),
+);
+
+$navbar-dark-color: white;
+
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@import "~bootstrap/scss/bootstrap";
