@@ -3,18 +3,35 @@ $theme-colors: (
 );
 
 $navbar-dark-color: white;
+$nav-tabs-link-active-color: red;
 
 .navbar {
   backdrop-filter: blur(2px);
 }
 
 .carousel {
-  position: relative;
-  width: 100vw;
-  height: auto;
+  .carousel-item {
+    height: 100vh;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100vh;
+    }
+  }
+  .carousel-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
 
   .carousel-indicators li {
-    margin: 0px 30px;
+    margin: 0px 20px;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -27,17 +44,37 @@ $navbar-dark-color: white;
     padding: 20px;
     user-select: none;
     text-align: left;
+    @media screen and (max-width: 500px) {
+      width: 80vw;
+      top: 40%;
+    }
     h3 {
-      font-size: 4vw;
+      font-size: calc(12px + 3vw);
     }
     p {
-      font-size: 1.25vw;
+      font-size: calc(8px + 1vw);
     }
   }
 
   .carousel-control-prev,
   .carousel-control-next {
     visibility: hidden;
+  }
+
+  @media screen and (max-width: 500px) {
+    .carousel-item {
+      height: 80vh;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 80vh;
+      }
+    }
+    .carousel-indicators {
+      margin: 10px 10px;
+    }
   }
 }
 

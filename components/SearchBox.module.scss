@@ -41,9 +41,9 @@
     background: #ededed
       url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
       9px center;
-    border: solid 1px #ccc;
+    border: solid 1px rgba(204, 204, 204, 0);
     padding: 9px 10px 9px 32px;
-    width: 55px;
+    width: 0px;
 
     -webkit-border-radius: 10em;
     -moz-border-radius: 10em;
@@ -72,7 +72,7 @@
 
   /* Demo 2 */
   #demo-2 input[type="search"] {
-    width: 15px;
+    width: 11px;
     padding-left: 10px;
     color: transparent;
     cursor: pointer;

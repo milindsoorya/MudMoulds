@@ -11,7 +11,7 @@ function Header() {
         <Navbar.Brand href="#home">
           <img
             src="/images/logo_white.png"
-            className="d-inline-block align-top"
+            className={styles.logo}
             alt="logo"
           />
         </Navbar.Brand>
@@ -19,7 +19,7 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Link href="/">
-              <a class="nav-item nav-link mx-3">HOME</a>
+              <a class="nav-item nav-link mx-3 pink">HOME</a>
             </Link>
             <Link href="/gallery">
               <a class="nav-item nav-link mx-3">GALLERY</a>
