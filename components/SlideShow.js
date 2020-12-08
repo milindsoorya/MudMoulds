@@ -1,6 +1,7 @@
 import styles from "./SlideShow.module.scss";
 import Carousel from "react-bootstrap/Carousel";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 function SlideShow({ slides }) {
   return (
@@ -93,9 +94,21 @@ function SlideShow({ slides }) {
           </Carousel.Item>
         </Carousel>
         <div className={styles.socialMediaDiv}>
-          <FaFacebookF className={styles.socialMedia} />
-          <FaInstagram className={styles.socialMedia} />
-          <FaYoutube className={styles.socialMedia} />
+          <Link href="/">
+            <a>
+              <FaFacebookF className={styles.socialMedia} />
+            </a>
+          </Link>
+          <Link href="/">
+            <a>
+              <FaInstagram className={styles.socialMedia} />
+            </a>
+          </Link>
+          <Link href="/">
+            <a>
+              <FaYoutube className={styles.socialMedia} />
+            </a>
+          </Link>
         </div>
       </div>
     </>

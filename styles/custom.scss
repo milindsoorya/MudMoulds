@@ -3,7 +3,19 @@ $theme-colors: (
 );
 
 $navbar-dark-color: white;
-$nav-tabs-link-active-color: red;
+$navbar-dark-hover-color: #fe5b7f;
+
+.activeColor {
+  color: #fe5b7f;
+  margin: 0px;
+  border: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  &:hover {
+    color: #fe5b7f;
+    text-decoration: none;
+  }
+}
 
 .navbar {
   backdrop-filter: blur(2px);
