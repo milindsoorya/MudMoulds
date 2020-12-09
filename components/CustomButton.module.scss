@@ -1,0 +1,11 @@
+.container {
+  height: calc(40px + 5vw);
+  width: calc(150px + 20vw);
+}
+
+.btnText {
+  display: flex;
+  align-items: center;
+  font-size: calc(6px + 1vw);
+  justify-content: space-around;
+}

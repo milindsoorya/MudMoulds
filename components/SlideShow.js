@@ -2,6 +2,8 @@ import styles from "./SlideShow.module.scss";
 import Carousel from "react-bootstrap/Carousel";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import CustomButton from "./CustomButton";
+import Button from "react-bootstrap/Button";
 
 function SlideShow({ slides }) {
   return (
@@ -26,6 +28,7 @@ function SlideShow({ slides }) {
                   swaddle our cultural legacy and novelty hand in hand. This
                   makes pottery the master of all arts.{" "}
                 </p>
+                <CustomButton />
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -47,6 +50,7 @@ function SlideShow({ slides }) {
                   engage in collaborations. Feel free to taste the soul of
                   Mudmoulds and dive into our fascinating art gallery.
                 </p>
+                <CustomButton />
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -67,6 +71,7 @@ function SlideShow({ slides }) {
                   more craftsmanship with our team. We would love to see the
                   birth of experts in our art.
                 </p>
+                <CustomButton />
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -89,6 +94,7 @@ function SlideShow({ slides }) {
                   to make modern life calmer without compromising your
                   engagements.{" "}
                 </p>
+                <CustomButton />
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -107,6 +113,15 @@ function SlideShow({ slides }) {
           <Link href="/">
             <a>
               <FaYoutube className={styles.socialMedia} />
+            </a>
+          </Link>
+        </div>
+        <div className={styles.haveQuestionDiv}>
+          <Link href="/contact">
+            <a>
+              <Button variant="primary rounded-lg" size="sm">
+                Have any question?
+              </Button>
             </a>
           </Link>
         </div>

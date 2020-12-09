@@ -1,5 +1,10 @@
-import SlideShow from "../components/SlideShow";
+import CardGroup from "../components/CardGroup";
+import styles from "../styles/Home.module.scss";
 
-export default function Home({ movies }) {
-  return <div>{/* <SlideShow /> */}</div>;
+export default function Home() {
+  return (
+    <div>
+      <CardGroup />
+    </div>
+  );
 }

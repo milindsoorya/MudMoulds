@@ -4,6 +4,8 @@ $theme-colors: (
 
 $navbar-dark-color: white;
 $navbar-dark-hover-color: #fe5b7f;
+$primary: #fe5b7f;
+$rounded-pill: 10px;
 
 .activeColor {
   color: #fe5b7f;
@@ -13,13 +15,14 @@ $navbar-dark-hover-color: #fe5b7f;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
   padding: 0.5rem 1rem;
 
   &:after {
     border-radius: 100%;
     position: relative;
     background: #fe5b7f;
-    margin-top: 10px;
+    margin-top: 15px;
     bottom: 10px;
     height: 8px;
     content: "";
@@ -40,6 +43,7 @@ $navbar-dark-hover-color: #fe5b7f;
   border: none;
   display: block;
   padding: 0.5rem 1rem;
+  margin-top: 15px;
   &:hover {
     color: #fe5b7f;
     text-decoration: none;
@@ -84,7 +88,7 @@ $navbar-dark-hover-color: #fe5b7f;
   .carousel-caption {
     top: 30%;
     left: 2%;
-    width: 40vw;
+    width: 45vw;
     padding: 20px;
     user-select: none;
     text-align: left;
@@ -93,16 +97,22 @@ $navbar-dark-hover-color: #fe5b7f;
       top: 40%;
     }
     h3 {
-      font-size: calc(12px + 3vw);
+      font-size: calc(10px + 3vw);
     }
     p {
-      font-size: calc(8px + 1vw);
+      font-size: calc(6px + 1vw);
     }
   }
 
   .carousel-control-prev,
   .carousel-control-next {
     visibility: hidden;
+  }
+
+  .card-img,
+  .card-img-top,
+  .card-img-bottom {
+    width: 50px;
   }
 
   @media screen and (max-width: 500px) {

@@ -1,12 +1,8 @@
-.container {
+.aboutSection {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  .card_container {
-    display: flex;
-  }
 }
 
 @media all and (max-width: 800px) {
