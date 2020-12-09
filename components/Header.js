@@ -26,7 +26,7 @@ function Header() {
                 className={
                   router.pathname === "/"
                     ? "activeColor mx-4"
-                    : "nav-item nav-link mx-4"
+                    : "notActive mx-4"
                 }
               >
                 HOME
@@ -37,7 +37,7 @@ function Header() {
                 className={
                   router.pathname === "/gallery"
                     ? "activeColor mx-4"
-                    : "nav-item nav-link mx-4"
+                    : "notActive mx-4"
                 }
               >
                 GALLERY
@@ -48,7 +48,7 @@ function Header() {
                 className={
                   router.pathname === "/practice"
                     ? "activeColor mx-4"
-                    : "nav-item nav-link mx-4"
+                    : "notActive mx-4"
                 }
               >
                 PRACTICE
@@ -59,7 +59,7 @@ function Header() {
                 className={
                   router.pathname === "/about"
                     ? "activeColor mx-4"
-                    : "nav-item nav-link mx-4"
+                    : "notActive mx-4"
                 }
               >
                 ABOUT US
@@ -70,7 +70,7 @@ function Header() {
                 className={
                   router.pathname === "/contact"
                     ? "activeColor mx-4"
-                    : "nav-item nav-link mx-4"
+                    : "notActive mx-4"
                 }
               >
                 CONTACT US
