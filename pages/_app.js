@@ -1,7 +1,7 @@
 import Header from "components/Header";
 import "../styles/globals.scss";
-import Navbar from "react-bootstrap/Navbar";
 import SlideShow from "../components/SlideShow";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <SlideShow />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

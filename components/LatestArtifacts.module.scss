@@ -1,0 +1,25 @@
+.container {
+  margin: 40px 20px;
+}
+
+.title {
+  text-align: center;
+}
+.containerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hLine {
+  width: calc(100px + 5vw);
+  background-color: #fe5b7f;
+  size: 20px;
+  border: none;
+  height: 2px;
+  margin-bottom: 40px;
+}
+
+.button {
+  margin: 40px 20px;
+  text-align: center;
+}

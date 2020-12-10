@@ -1,0 +1,32 @@
+.cardStyle {
+  @media screen and (min-width: 575px) {
+    display: flex;
+    flex-direction: row;
+    border: hidden;
+  }
+  display: flex;
+  flex-direction: column;
+  border: hidden;
+}
+.cardImg {
+  @media screen and (min-width: 575px) {
+    height: 55vh;
+    width: 60vw;
+  }
+  border-radius: 0;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9ecef;
+}
+.hLine {
+  width: calc(100px + 5vw);
+  background-color: #fe5b7f;
+  size: 20px;
+  border: none;
+  height: 2px;
+}
