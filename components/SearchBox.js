@@ -5,7 +5,8 @@ function SearchBox() {
   return (
     <div className={styles.searchBox}>
       <form id="demo-2">
-        <input type="search" placeholder="Search" />
+        <input type="search" />
+        {/* <img src="images/search.png" /> */}
       </form>
     </div>
   );

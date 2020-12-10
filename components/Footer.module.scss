@@ -1,0 +1,47 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252525;
+  overflow: hidden;
+}
+.text {
+  width: 50vw;
+  text-align: center;
+  color: white;
+}
+.hLineSm {
+  width: calc(100px + 5vw);
+  background-color: #fe5b7f;
+  size: 20px;
+  border: none;
+  height: 2px;
+}
+
+.hLineLg {
+  width: calc(100px + 90vw);
+  background-color: #fe5b7f;
+  size: 20px;
+  margin: 0px 0px;
+  border: none;
+  height: 2px;
+}
+
+.emailButton {
+  width: 55vw;
+  margin: 40px;
+}
+
+.socialMediaDiv {
+  margin: 30px 0px;
+  .socialMedia {
+    height: 24px;
+    width: 42px;
+    color: aliceblue;
+    margin: 0px 20px;
+    &:hover {
+      color: #fe5b7f;
+    }
+  }
+}

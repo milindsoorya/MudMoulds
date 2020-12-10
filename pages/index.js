@@ -1,26 +1,14 @@
+import CardGroup from "../components/CardGroup";
+import ImageCard from "../components/ImageCard";
+import LatestArtifacts from "../components/LatestArtifacts";
 import styles from "../styles/Home.module.scss";
-import fetch from "isomorphic-unfetch";
 
-import Card from "../components/Card";
-import SlideShow from "../components/SlideShow";
-
-export default function Home({ movies }) {
+export default function Home() {
   return (
-    <div className={styles.container}>
-      <SlideShow />
+    <div>
+      <CardGroup />
+      <ImageCard />
+      <LatestArtifacts />
     </div>
   );
 }
-
-// export async function getServerSideProps() {
-//   const { API_URL } = process.env;
-
-//   const res = await fetch(`${API_URL}/movies`);
-//   const data = await res.json();
-
-//   return {
-//     props: {
-//       movies: data,
-//     },
-//   };
-// }

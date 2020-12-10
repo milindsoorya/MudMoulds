@@ -3,41 +3,132 @@ $theme-colors: (
 );
 
 $navbar-dark-color: white;
+$navbar-dark-hover-color: #fe5b7f;
+$primary: #fe5b7f;
+$rounded-pill: 10px;
+
+.activeColor {
+  color: #fe5b7f;
+  margin: 0px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 0.5rem 1rem;
+
+  &:after {
+    border-radius: 100%;
+    position: relative;
+    background: #fe5b7f;
+    margin-top: 15px;
+    bottom: 10px;
+    height: 8px;
+    content: "";
+    width: 8px;
+    text-align: center;
+  }
+
+  &:hover {
+    color: #fe5b7f;
+    text-decoration: none;
+  }
+}
+
+.notActive {
+  color: white;
+  //background-color: red;
+  margin: 0px;
+  border: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-top: 15px;
+  &:hover {
+    color: #fe5b7f;
+    text-decoration: none;
+  }
+}
 
 .navbar {
   backdrop-filter: blur(2px);
 }
 
 .carousel {
-  position: relative;
-  width: 100vw;
-  height: auto;
+  .carousel-item {
+    height: 100vh;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100vh;
+    }
+  }
+  .carousel-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
 
   .carousel-indicators li {
-    margin: 0px 30px;
+    margin: 0px 20px;
     width: 10px;
     height: 10px;
     border-radius: 100%;
+  }
+  .carousel-indicators .active {
+    background-color: #fe5b7f;
   }
 
   .carousel-caption {
     top: 30%;
     left: 2%;
-    width: 40vw;
+    width: 45vw;
     padding: 20px;
     user-select: none;
     text-align: left;
+    @media screen and (max-width: 500px) {
+      width: 80vw;
+      top: 40%;
+    }
     h3 {
-      font-size: 4vw;
+      font-size: calc(10px + 3vw);
     }
     p {
-      font-size: 1.25vw;
+      font-size: calc(6px + 1vw);
     }
   }
 
   .carousel-control-prev,
   .carousel-control-next {
     visibility: hidden;
+  }
+
+  .card-img,
+  .card-img-top,
+  .card-img-bottom {
+    width: 50px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .carousel-item {
+      height: 80vh;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 80vh;
+      }
+    }
+    .carousel-indicators {
+      margin: 10px 10px;
+    }
   }
 }
 

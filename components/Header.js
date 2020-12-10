@@ -1,17 +1,20 @@
 import Link from "next/link";
 import { Navbar, Nav, Form } from "react-bootstrap";
+import { useRouter } from "next/router";
 
 import styles from "./Header.module.scss";
 import SearchBox from "./SearchBox";
 
 function Header() {
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Navbar fixed="top" bg="transparent" variant="dark" expand="lg">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src="/images/logo_white.png"
-            className="d-inline-block align-top"
+            className={styles.logo}
             alt="logo"
           />
         </Navbar.Brand>
@@ -19,19 +22,59 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Link href="/">
-              <a class="nav-item nav-link mx-3">HOME</a>
+              <a
+                className={
+                  router.pathname === "/"
+                    ? "activeColor mx-4"
+                    : "notActive mx-4"
+                }
+              >
+                HOME
+              </a>
             </Link>
             <Link href="/gallery">
-              <a class="nav-item nav-link mx-3">GALLERY</a>
+              <a
+                className={
+                  router.pathname === "/gallery"
+                    ? "activeColor mx-4"
+                    : "notActive mx-4"
+                }
+              >
+                GALLERY
+              </a>
             </Link>
             <Link href="/practice">
-              <a class="nav-item nav-link mx-3">PRACTICE</a>
+              <a
+                className={
+                  router.pathname === "/practice"
+                    ? "activeColor mx-4"
+                    : "notActive mx-4"
+                }
+              >
+                PRACTICE
+              </a>
             </Link>
             <Link href="/about">
-              <a class="nav-item nav-link mx-3">ABOUT US</a>
+              <a
+                className={
+                  router.pathname === "/about"
+                    ? "activeColor mx-4"
+                    : "notActive mx-4"
+                }
+              >
+                ABOUT US
+              </a>
             </Link>
             <Link href="/contact">
-              <a class="nav-item nav-link mx-3">CONTACT US</a>
+              <a
+                className={
+                  router.pathname === "/contact"
+                    ? "activeColor mx-4"
+                    : "notActive mx-4"
+                }
+              >
+                CONTACT US
+              </a>
             </Link>
             <Form inline>
               <SearchBox />
