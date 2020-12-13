@@ -8,9 +8,21 @@
   flex-direction: column;
   border: hidden;
 }
+
+.cardStyleReverse {
+  @media screen and (min-width: 575px) {
+    display: flex;
+    flex-direction: row-reverse;
+    border: hidden;
+  }
+  display: flex;
+  flex-direction: column;
+  border: hidden;
+}
+
 .cardImg {
   @media screen and (min-width: 575px) {
-    height: 55vh;
+    height: 60vh;
     width: 60vw;
   }
   border-radius: 0;
