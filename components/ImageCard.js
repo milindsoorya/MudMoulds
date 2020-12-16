@@ -3,7 +3,9 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
 
+ 
 function ImageCard({title,text,image,reverse}) {
+ 
   return (
       <Card className={reverse?styles.cardStyleReverse:styles.cardStyle}>
           <Card.Img

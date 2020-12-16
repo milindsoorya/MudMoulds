@@ -1,3 +1,4 @@
+ 
 import { Container } from 'react-bootstrap';
 import Heading from '../../components/Heading';
 import MasonryView from '../../components/MasonryView';
@@ -14,6 +15,7 @@ function Gallery() {
           harmoniously incorporated in to picture. We provide a soothing optimism in your residing space
           with our artistic touch."/>
       <MasonryView />
+ 
       </Container>
   );
 }

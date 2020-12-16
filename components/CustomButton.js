@@ -4,15 +4,15 @@ import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 import styles from "./CustomButton.module.scss";
 
-function CustomButton() {
+function CustomButton({ text, icon }) {
   return (
     <div className={styles.container}>
       <Link href="/gallery">
         <a>
           <Button variant="primary rounded-pill" size="lg w-50">
             <div className={styles.btnText}>
-              Discover
-              <FaAngleRight />
+              {text ? text : "Discover"}
+              {icon ? icon : <FaAngleRight />}
             </div>
           </Button>
         </a>
