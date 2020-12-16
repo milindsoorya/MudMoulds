@@ -22,7 +22,7 @@ function Footer() {
             </p>
           </div>
           <div className={styles.emailButton}>
-            <InputGroup className="mb-2 ">
+            <InputGroup className="mb-2">
               <FormControl
                 placeholder="Enter your Email Address"
                 aria-label="Enter your Email Address"

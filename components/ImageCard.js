@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Button from "react-bootstrap/Button";
 
-function ImageCard() {
+function ImageCard({ photos }) {
   return (
     <div>
       <CardGroup>
