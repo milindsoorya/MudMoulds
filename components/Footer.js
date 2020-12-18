@@ -9,7 +9,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div className={styles.container}>
-      <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div className="navbar navbar-inverse navbar-fixed-bottom">
         <div className={styles.container}>
                   
           <div className={styles.text}>

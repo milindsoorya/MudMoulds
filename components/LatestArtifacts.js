@@ -34,12 +34,12 @@ function LatestArtifacts() {
         autoPlaySpeed={4000}
         centerMode={false}
         className=""
-        containerClass="container-with-dots"
-        dotListClass=""
+        containerclassName="container-with-dots"
+        dotListclassName=""
         draggable
         focusOnSelect={false}
         infinite
-        itemClass=""
+        itemclassName=""
         keyBoardControl
         minimumTouchDrag={80}
         renderButtonGroupOutside={false}
