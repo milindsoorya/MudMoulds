@@ -18,33 +18,34 @@ export const Murals = [
   {
     src: "/images/murals3.png",
     width: 3,
-    height: 3,
+    height: 2.6,
   },
   {
     src: "/images/murals4.png",
-    width: 3,
-    height: 4,
+    width: 4,
+    height: 3,
   },
   {
     src: "/images/murals5.png",
-    width: 3,
+    width: 2,
     height: 3,
   },
   {
     src: "/images/murals6.png",
-    width: 3,
-    height: 5,
+    width: 1,
+    height: 1,
   },
   {
     src: "/images/murals7.png",
     width: 3,
     height: 4,
-  },
+  },        
   {
     src: "/images/murals8.png",
-    width: 4,
-    height: 3,
+    width: 20,
+    height: 21,
   },
+        
 ];
 
 export const ImageforCard = [
