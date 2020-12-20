@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Navbar, Nav, Form } from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { useRouter } from "next/router";
+import { FaSearch } from "react-icons/fa";
 
 import styles from "./Header.module.scss";
 import SearchBox from "./SearchBox";
+import SearchBox2 from "./SearchBox2";
 
 function Header() {
   const router = useRouter();
@@ -105,7 +107,8 @@ function Header() {
               </a>
             </Link>
             <Form inline>
-              <SearchBox />
+              {/* <SearchBox /> */}
+              <SearchBox2 />
             </Form>
           </Nav>
         </Navbar.Collapse>
