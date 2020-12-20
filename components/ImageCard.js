@@ -62,7 +62,7 @@ function ImageCard({ photos }) {
           variant="top"
           src="images/imagecard/imgCard2.png"
           className={styles.cardImg}
-          fluid
+          fluid="true"
         />
       </CardGroup>
     </div>

@@ -11,7 +11,6 @@ function Footer() {
     <div className={styles.container}>
       <div class="navbar navbar-inverse navbar-fixed-bottom">
         <div className={styles.container}>
-                  
           <div className={styles.text}>
             <Card.Title>SUBSCRIBE TO OUR NEWSLETTER</Card.Title>
             <hr className={styles.hLineSm} />       
@@ -34,24 +33,24 @@ function Footer() {
             </InputGroup>
           </div>
           <hr className={styles.hLineLg} />   
+          <div className={styles.socialMediaDiv}>
+            <Link href="/">
+              <a>
+                <FaFacebookF className={styles.socialMedia} />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <FaInstagram className={styles.socialMedia} />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <FaYoutube className={styles.socialMedia} />
+              </a>
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className={styles.socialMediaDiv}>
-        <Link href="/">
-          <a>
-            <FaFacebookF className={styles.socialMedia} />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <FaInstagram className={styles.socialMedia} />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <FaYoutube className={styles.socialMedia} />
-          </a>
-        </Link>
       </div>
     </div>
   );
