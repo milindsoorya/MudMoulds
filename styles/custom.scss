@@ -38,7 +38,6 @@ $rounded-pill: 10px;
 
 .notActive {
   color: white;
-  //background-color: red;
   margin: 0px;
   border: none;
   display: block;
@@ -51,7 +50,24 @@ $rounded-pill: 10px;
 }
 
 .navbar {
+  height: 80px;
   backdrop-filter: blur(2px);
+}
+
+.navbar-nav {
+  @media screen and (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+    a {
+      color: black;
+    }
+  }
 }
 
 .carousel {

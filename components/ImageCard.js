@@ -31,7 +31,9 @@ function ImageCard({ photos }) {
                 view that art is limitless.
               </p>
             </Card.Text>
-            <Button variant="primary">View more</Button>
+            <Link href="/gallery">
+              <Button variant="primary">View more</Button>
+            </Link>
           </Card.Body>
         </Card>
       </CardGroup>
@@ -51,7 +53,9 @@ function ImageCard({ photos }) {
               would love this quintessential spirit of mother, Earth to make
               well of yourselves and others.
             </Card.Text>
-            <Button variant="primary">View more</Button>
+            <Link href="/practice">
+              <Button variant="primary">View more</Button>
+            </Link>
           </Card.Body>
         </Card>
         <Card.Img
