@@ -12,13 +12,14 @@ function Contact() {
     <div>
       <Container>
         <div className={styles.headerContainer}>
-          <h6 className={styles.headerTitle}>LETS GET IN TOUCH</h6>
+          <h6 className={styles.headerTitle}>Learn & grow together</h6>
           <hr className={styles.hLineSm} />    
           <span>
-            The inspiration of Mudmoulds is satisfaction of our clients. We are
-            always a call away to spread your smile in customized artworks and
-            products. Let’s get in touch, associate and work together for even
-            more beautiful outcomes.
+            Knowledge increases by sharing but not by saving. Mudmoulds extend
+            our artistic hands to shape the hands of rising talents too. We are
+            fortunate to accept collaborations and happy to share our art
+            through workshops and exhibitions. Mudmoulds are also interested in
+            all kinds of collaborations to stretch the wings of Mudmoulds.
           </span>
         </div>
 

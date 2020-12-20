@@ -7,14 +7,24 @@
 }
 .containerItems {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-
+  flex-direction: column;
+  //align-items: center;
+  width: auto;
+  height: 229px;
+  background: #fdfdfd;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+}
+.byLine {
+  text-align: end;
   h6 {
-    text-align: center;
-    padding-top: 20px;
-    width: 280px;
+    margin-bottom: 1px;
+  }
+  i {
+    color: grey;
   }
 }
 .hLine {

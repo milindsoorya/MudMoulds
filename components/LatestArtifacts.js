@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "react-bootstrap/Card";
@@ -48,19 +50,25 @@ function LatestArtifacts() {
       >
         <div className={styles.containerItems}>
           <img src="images/latestArtifacts/latestArtifact1.png" />
+          <h6>Interior Decor piece - Frankincense censer</h6>
         </div>
         <div className={styles.containerItems}>
           <img src="images/latestArtifacts/latestArtifact2.png" />
+          <h6>Saint - Mary Mural art piece</h6>
         </div>
         <div className={styles.containerItems}>
           <img src="images/latestArtifacts/latestArtifact3.png" />
+          <h6>Interior Decor piece - Organic vessel</h6>
         </div>
         <div className={styles.containerItems}>
           <img src="images/latestArtifacts/latestArtifact4.png" />
+          <h6>Interior Decor piece - Frankincense censer</h6>
         </div>
       </Carousel>
       <div className={styles.button}>
-        <Button variant="primary">View more</Button>
+        <Link href="./gallery">
+          <Button variant="primary">View more</Button>
+        </Link>
       </div>
     </div>
   );
