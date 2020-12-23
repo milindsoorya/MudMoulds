@@ -61,11 +61,7 @@ function Header() {
               <a
                 onClick={() => setExpanded(false)}
                 className={
-                  router.pathname === "/gallery" ||
-                  "/gallery/murals" ||
-                  "/gallery/culinaryTools" ||
-                  "/gallery/gardenDecor" ||
-                  "/gallery/interiorDecors"
+                  router.pathname === "/gallery"
                     ? "activeColor mx-4"
                     : "notActive mx-4"
                 }
