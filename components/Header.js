@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav, Form } from "react-bootstrap";
 import { useRouter } from "next/router";
-import { FaSearch } from "react-icons/fa";
 
 import styles from "./Header.module.scss";
-import SearchBox from "./SearchBox";
+
 import SearchBox2 from "./SearchBox2";
 
 function Header() {
@@ -62,7 +61,11 @@ function Header() {
               <a
                 onClick={() => setExpanded(false)}
                 className={
-                  router.pathname === "/gallery"
+                  router.pathname === "/gallery" ||
+                  "/gallery/murals" ||
+                  "/gallery/culinaryTools" ||
+                  "/gallery/gardenDecor" ||
+                  "/gallery/interiorDecors"
                     ? "activeColor mx-4"
                     : "notActive mx-4"
                 }
@@ -107,7 +110,6 @@ function Header() {
               </a>
             </Link>
             <Form inline>
-              {/* <SearchBox /> */}
               <SearchBox2 />
             </Form>
           </Nav>
