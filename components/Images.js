@@ -39,13 +39,12 @@ export const MuralsArray = [
     src: "/images/murals7.png",
     width: 3,
     height: 4,
-  },        
+  },
   {
     src: "/images/murals8.png",
     width: 20,
     height: 21,
   },
-        
 ];
 
 export const gardenDecorsArray = [
