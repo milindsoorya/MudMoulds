@@ -13,13 +13,19 @@ function Header() {
   const [headerColor, setHeaderColor] = useState("transparent");
   const [expanded, setExpanded] = useState(false);
 
-  const listenScrollEvent = () => {
-    window.scrollY > window.innerHeight / 2
-      ? setHeaderColor("dark")
-      : setHeaderColor("transparent");
-  };
+  // const listenScrollEvent = () => {
+  //   window.scrollY > window.innerHeight / 2
+  //     ? setHeaderColor("dark")
+  //     : setHeaderColor("transparent");
+  // };
 
   useEffect(() => {
+    const listenScrollEvent = () => {
+      window.scrollY > window.innerHeight / 2
+        ? setHeaderColor("dark")
+        : setHeaderColor("transparent");
+    };
+
     window.addEventListener("scroll", listenScrollEvent);
   });
 
@@ -32,7 +38,7 @@ function Header() {
         expand="lg"
         expanded={expanded}
       >
-        <Navbar.Brand href="/" class="ml-2">
+        <Navbar.Brand href="/" className="ml-2">
           <img
             src="/images/logo_white.png"
             className={styles.logo}
@@ -105,9 +111,9 @@ function Header() {
                 CONTACT US
               </a>
             </Link>
-            <Form inline>
+            <div>
               <SearchBox2 />
-            </Form>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

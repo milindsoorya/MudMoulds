@@ -15,7 +15,7 @@ function SlideShow({ slides }) {
               className="d-block w-100"
               src="images/hero_contact.png"
               alt="First slide"
-              class="img-fluid"
+              className="img-fluid"
             />
 
             <Carousel.Caption>
@@ -37,7 +37,7 @@ function SlideShow({ slides }) {
               className="d-block w-100"
               src="/images/hero_culinary.png"
               alt="Third slide"
-              class="img-fluid"
+              className="img-fluid"
             />
 
             <Carousel.Caption>
@@ -59,7 +59,7 @@ function SlideShow({ slides }) {
               className="d-block w-100"
               src="/images/hero_gallery.png"
               alt="Third slide"
-              class="img-fluid"
+              className="img-fluid"
             />
 
             <Carousel.Caption>
@@ -80,7 +80,7 @@ function SlideShow({ slides }) {
               className="d-block w-100"
               src="/images/hero_practice.png"
               alt="Third slide"
-              class="img-fluid"
+              className="img-fluid"
             />
 
             <Carousel.Caption>

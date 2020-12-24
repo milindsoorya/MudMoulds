@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import Heading from "../../components/Heading";
 import ImageLeftCard from "../../components/ImageLeftCard";
 import ImageRightCard from "../../components/ImageRightCard";

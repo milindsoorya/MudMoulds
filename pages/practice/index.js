@@ -29,7 +29,7 @@ function Practice() {
             variant="top"
             src="images/practice.png"
             className={styles.heroCardImg}
-            fluid
+            fluid="true"
           />
           <Card.Body className={styles.heroCardBody}>
             <Card.Title>
@@ -37,16 +37,14 @@ function Practice() {
               <hr className={styles.hLine} />
             </Card.Title>
             <Card.Text>
-              <p>
-                No day is better than today to begin with. Inform us about your
-                passion in our craft and we provide you with ample opportunities
-                to share our expertise. Many students from schools, colleges,
-                tourists showed their curiosity in our artisanship and could
-                give adequate training on their prerequisites. Mudmoulds would
-                be grateful to build up a population to set the world toxic free
-                and return back to nature. We are ready to frame numerous hands
-                capable of mural arts and pottery.
-              </p>
+              No day is better than today to begin with. Inform us about your
+              passion in our craft and we provide you with ample opportunities
+              to share our expertise. Many students from schools, colleges,
+              tourists showed their curiosity in our artisanship and could give
+              adequate training on their prerequisites. Mudmoulds would be
+              grateful to build up a population to set the world toxic free and
+              return back to nature. We are ready to frame numerous hands
+              capable of mural arts and pottery.
             </Card.Text>
             <Link href="contact">
               <Button variant="primary">Contact us</Button>

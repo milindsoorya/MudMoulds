@@ -13,23 +13,21 @@ function ImageCard({ photos }) {
             variant="top"
             src="images/imagecard/imgCard1.png"
             className={styles.cardImg}
-            fluid
+            fluid="true"
           />
           <Card.Body className={styles.cardBody}>
             <Card.Title>WORKSHOPS & EVENTS</Card.Title>
             <hr className={styles.hLine} />
             <Card.Text>
-              <p>
-                Mudmoulds in the name of “Anaswaram” has conducted handful of
-                workshops over the past years. It is a privilege that we have
-                been a part of numerous events spreading our soul of artistry
-                and entitled for achievements and participation in prominent
-                cultural and social events. Mudmoulds knew that no small piece
-                of knowledge is trivial and this shaped us in getting attracted
-                to superior workshops across the country. Mudmoulds loves to
-                scream that we are swimming forward in the ocean of art in the
-                view that art is limitless.
-              </p>
+              Mudmoulds in the name of “Anaswaram” has conducted handful of
+              workshops over the past years. It is a privilege that we have been
+              a part of numerous events spreading our soul of artistry and
+              entitled for achievements and participation in prominent cultural
+              and social events. Mudmoulds knew that no small piece of knowledge
+              is trivial and this shaped us in getting attracted to superior
+              workshops across the country. Mudmoulds loves to scream that we
+              are swimming forward in the ocean of art in the view that art is
+              limitless.
             </Card.Text>
             <Link href="/gallery">
               <Button variant="primary">View more</Button>

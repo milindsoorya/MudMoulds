@@ -4,10 +4,23 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import Button from "react-bootstrap/Button";
 import CardDeck from "react-bootstrap/CardDeck";
+import { NextSeo } from "next-seo";
 
 function About() {
+  const SEO = {
+    title: "About Mudmoulds",
+    description:
+      "Mudmoulds is the new face of ‘anaswaram’ and the outset of Mudmoulds is in the view to elaborate the network of Nilambur potteries, to achieve a position in many homes. We make culinary tools which are completely made naturally, unblended with chemicals and pollutants in this era of food poisoned from Aluminium , non stick utensils. We incorporate the boon of nature, clay to mould bespoke products. Around 150 varieties of culinary tools which can be used on microwave and stove are produced by our team.",
+
+    openGraph: {
+      title: "About Mudmoulds",
+      description:
+        "Mudmoulds is the new face of ‘anaswaram’ and the outset of Mudmoulds is in the view to elaborate the network of Nilambur potteries, to achieve a position in many homes. We make culinary tools which are completely made naturally, unblended with chemicals and pollutants in this era of food poisoned from Aluminium , non stick utensils. We incorporate the boon of nature, clay to mould bespoke products. Around 150 varieties of culinary tools which can be used on microwave and stove are produced by our team.",
+    },
+  };
   return (
     <div>
+      <NextSeo {...SEO} />
       <div className={styles.headerContainer}>
         <h6 className={styles.headerTitle}>About Mudmoulds</h6>
         <hr className={styles.hLineSm} />    
@@ -28,7 +41,7 @@ function About() {
             variant="top"
             src="images/vijayaKumari.png"
             className={styles.heroCardImg}
-            fluid
+            fluid="true"
           />
           <Card.Body className={styles.heroCardBody}>
             <Card.Title>
@@ -37,20 +50,18 @@ function About() {
             </Card.Title>
             <hr className={styles.hLine} />
             <Card.Text>
-              <p>
-                Vijaya Kumari, our foundress manifested her interest in pottery
-                at a very young age. In focused curiosity, she found herself
-                happy in this art, which later turned out to be a passion and
-                made her the expert in her craft. Her determination and belief
-                in this divine artistry led to the path finding decision to
-                introduce the almost extinct Nilambur potteries in the name of
-                ‘Anaswaram’. It is the sweat of this diligent woman for past 10
-                years spread the fragrance of brand new ‘Mudmoulds’ with a great
-                team behind. “The reason to get the ball rolling Mudmoulds is to
-                engage more kind hearts in to this province of pottery and
-                murals. Also to offer a return ticket to natural produces and
-                it’s peaceful outcomes to the society”, says our foundress.
-              </p>
+              Vijaya Kumari, our foundress manifested her interest in pottery at
+              a very young age. In focused curiosity, she found herself happy in
+              this art, which later turned out to be a passion and made her the
+              expert in her craft. Her determination and belief in this divine
+              artistry led to the path finding decision to introduce the almost
+              extinct Nilambur potteries in the name of ‘Anaswaram’. It is the
+              sweat of this diligent woman for past 10 years spread the
+              fragrance of brand new ‘Mudmoulds’ with a great team behind. “The
+              reason to get the ball rolling Mudmoulds is to engage more kind
+              hearts in to this province of pottery and murals. Also to offer a
+              return ticket to natural produces and it’s peaceful outcomes to
+              the society”, says our foundress.
             </Card.Text>
           </Card.Body>
         </Card>
@@ -65,7 +76,7 @@ function About() {
               variant="top"
               src="images/team/susheela.png"
               className={styles.teamImg}
-              fluid
+              fluid="true"
             />
             <Card.Body className="text-center">
               <Card.Title>
@@ -86,7 +97,7 @@ function About() {
               variant="top"
               src="images/team/raviKumar.png"
               className={styles.teamImg}
-              fluid
+              fluid="true"
             />
             <Card.Body className="text-center">
               <Card.Title>
@@ -106,7 +117,7 @@ function About() {
               variant="top"
               src="images/team/akhil.png"
               className={styles.teamImg}
-              fluid
+              fluid="true"
             />
             <Card.Body className="text-center">
               <Card.Title>
