@@ -4,14 +4,6 @@ import Link from "next/link";
 import Button from "react-bootstrap/Button";
 import styles from "./MasonryView.module.scss";
 
-<<<<<<< HEAD
-
-const MasonryView = () => {
-    return (
-        <Gallery photos={Murals} columns={2} direction={"column"} margin={10} />
-    );
-}
-=======
 const MasonryView = ({ image }) => {
   return (
     <div>
@@ -24,5 +16,4 @@ const MasonryView = ({ image }) => {
     </div>
   );
 };
->>>>>>> milind
 export default MasonryView;
