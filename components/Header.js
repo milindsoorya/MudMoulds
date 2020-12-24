@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav, Form } from "react-bootstrap";
 import { useRouter } from "next/router";
-import { FaSearch } from "react-icons/fa";
 
 import styles from "./Header.module.scss";
-import SearchBox from "./SearchBox";
+
 import SearchBox2 from "./SearchBox2";
 
 function Header() {
@@ -14,13 +13,19 @@ function Header() {
   const [headerColor, setHeaderColor] = useState("transparent");
   const [expanded, setExpanded] = useState(false);
 
-  const listenScrollEvent = () => {
-    window.scrollY > window.innerHeight / 2
-      ? setHeaderColor("dark")
-      : setHeaderColor("transparent");
-  };
+  // const listenScrollEvent = () => {
+  //   window.scrollY > window.innerHeight / 2
+  //     ? setHeaderColor("dark")
+  //     : setHeaderColor("transparent");
+  // };
 
   useEffect(() => {
+    const listenScrollEvent = () => {
+      window.scrollY > window.innerHeight / 2
+        ? setHeaderColor("dark")
+        : setHeaderColor("transparent");
+    };
+
     window.addEventListener("scroll", listenScrollEvent);
   });
 
@@ -33,7 +38,7 @@ function Header() {
         expand="lg"
         expanded={expanded}
       >
-        <Navbar.Brand href="/" class="ml-2">
+        <Navbar.Brand href="/" className="ml-2">
           <img
             src="/images/logo_white.png"
             className={styles.logo}
@@ -106,10 +111,9 @@ function Header() {
                 CONTACT US
               </a>
             </Link>
-            <Form inline>
-              {/* <SearchBox /> */}
+            <div>
               <SearchBox2 />
-            </Form>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

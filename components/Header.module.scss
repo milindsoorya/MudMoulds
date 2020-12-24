@@ -1,7 +1,10 @@
 .logo {
-  //padding-left: 30%;
-  max-height: 70px;
-  max-width: 100px;
+  padding-left: 25%;
+  height: 61.35px;
+  @media screen and (max-width: 500px) {
+    padding-left: 5%;
+    height: 50px;
+  }
 }
 
 .active {

@@ -50,8 +50,11 @@ $rounded-pill: 10px;
 }
 
 .navbar {
-  height: 80px;
+  height: 113px;
   backdrop-filter: blur(2px);
+  @media screen and (max-width: 500px) {
+    height: 80px;
+  }
 }
 
 .navbar-nav {
