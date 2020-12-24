@@ -1,3 +1,17 @@
-.container{
-    margin-top: 50px;
+.headerContainer {
+  margin: 40px;
+  text-align: center;
+}
+
+.hLineSm {
+  width: calc(50px + 5vw);
+  background-color: #fe5b7f;
+  size: 20px;
+  border: none;
+  height: 2px;
+}
+
+.button {
+  margin: 40px 20px;
+  text-align: center;
 }
