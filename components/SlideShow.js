@@ -105,13 +105,13 @@ function SlideShow({ slides }) {
               <FaFacebookF className={styles.socialMedia} />
             </a>
           </Link>
-          <Link href="/">
-            <a>
+          <Link href="https://instagram.com/mudmoulds?igshid=1mzx7c538lry9">
+            <a target="_blank">
               <FaInstagram className={styles.socialMedia} />
             </a>
           </Link>
-          <Link href="/">
-            <a>
+          <Link href="https://youtube.com/channel/UC13mZkhJm1vhU-lowY12LbQ">
+            <a target="_blank">
               <FaYoutube className={styles.socialMedia} />
             </a>
           </Link>
