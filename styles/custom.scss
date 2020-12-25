@@ -6,6 +6,9 @@ $navbar-dark-color: white;
 $navbar-dark-hover-color: #fe5b7f;
 $primary: #fe5b7f;
 $rounded-pill: 10px;
+$dark: #121212;
+
+//$navbar-padding-x: 0;
 
 .activeColor {
   color: #fe5b7f;
@@ -50,7 +53,7 @@ $rounded-pill: 10px;
 }
 
 .navbar {
-  height: 113px;
+  height: 100px;
   backdrop-filter: blur(2px);
   @media screen and (max-width: 500px) {
     height: 80px;
@@ -61,13 +64,12 @@ $rounded-pill: 10px;
   @media screen and (max-width: 500px) {
     display: flex;
     align-items: center;
-    width: 100vw;
     height: 100vh;
-    margin-top: 10px;
-    background-color: white;
+    margin-top: 12px;
+    background-color: #121212d7;
 
     a {
-      color: black;
+      color: rgb(255, 255, 255);
     }
   }
 }

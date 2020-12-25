@@ -100,8 +100,8 @@ function SlideShow({ slides }) {
           </Carousel.Item>
         </Carousel>
         <div className={styles.socialMediaDiv}>
-          <Link href="/">
-            <a>
+          <Link href="https://m.facebook.com/Mudmoulds-104568118229470/">
+            <a target="_blank">
               <FaFacebookF className={styles.socialMedia} />
             </a>
           </Link>

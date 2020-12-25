@@ -42,7 +42,7 @@ function Contact() {
                 <Form.Label>Your Message</Form.Label>
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
-              <CustomButton text={"Sent Message"} icon={<FaTelegramPlane />} />
+              <CustomButton text={"Send Message"} icon={<FaTelegramPlane />} />
             </Form>
           </div>
 
