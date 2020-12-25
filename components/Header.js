@@ -111,7 +111,7 @@ function Header() {
                 CONTACT US
               </a>
             </Link>
-            <div>
+            <div className="mr-2">
               <SearchBox2 />
             </div>
           </Nav>
