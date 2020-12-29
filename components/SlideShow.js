@@ -1,9 +1,13 @@
-import styles from "./SlideShow.module.scss";
-import Carousel from "react-bootstrap/Carousel";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 import Link from "next/link";
-import CustomButton from "./CustomButton";
+
 import Button from "react-bootstrap/Button";
+import Carousel from "react-bootstrap/Carousel";
+
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+
+import styles from "./SlideShow.module.scss";
+import CustomButton from "./CustomButton";
 
 function SlideShow({ slides }) {
   return (
@@ -11,11 +15,10 @@ function SlideShow({ slides }) {
       <div className={styles.container}>
         <Carousel>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="images/hero_contact.png"
-              alt="First slide"
-              className="img-fluid"
+            <Image
+              src="/images/hero_contact.png"
+              alt="Contact slide"
+              layout="fill"
             />
 
             <Carousel.Caption>
@@ -33,11 +36,10 @@ function SlideShow({ slides }) {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
+            <Image
               src="/images/hero_culinary.png"
-              alt="Third slide"
-              className="img-fluid"
+              alt="Culinary slide"
+              layout="fill"
             />
 
             <Carousel.Caption>
@@ -55,11 +57,10 @@ function SlideShow({ slides }) {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
+            <Image
               src="/images/hero_gallery.png"
-              alt="Third slide"
-              className="img-fluid"
+              alt="gallery slide"
+              layout="fill"
             />
 
             <Carousel.Caption>
@@ -76,11 +77,10 @@ function SlideShow({ slides }) {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
+            <Image
               src="/images/hero_practice.png"
-              alt="Third slide"
-              className="img-fluid"
+              alt="practice slide"
+              layout="fill"
             />
 
             <Carousel.Caption>
