@@ -2,6 +2,7 @@ const AdminBro = require('admin-bro')
 const AdminBroExpress = require('admin-bro-expressjs')
 const AdminBroMongoose = require('admin-bro-mongoose')
 const NewsLetter = require('../models/newsletter');
+const Contact = require('../models/contact');
 AdminBro.registerAdapter(AdminBroMongoose)
 
 const express = require('express');
@@ -16,7 +17,8 @@ const adminBro = new AdminBro({
         softwareBrothers: false
     },
     resources: [
-        { resource: NewsLetter }
+        { resource: NewsLetter },
+        { resource: Contact }
     ]
 
 });
