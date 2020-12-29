@@ -7,8 +7,8 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-const adminRoute = require('./admin/index')
-const userRoute = require('./routes/userActions');
+const adminRoute = require('./server/admin/index')
+const userRoute = require('./server/routes/userActions');
 const db = mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
