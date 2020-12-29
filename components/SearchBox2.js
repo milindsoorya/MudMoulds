@@ -38,7 +38,7 @@ function SearchBox2() {
             pattern=".*\S.*"
             required
             onChange={handleOnSearch}
-            autocomplete="off"
+            autoComplete="off"
           />
           <Link href="#">
             <button
