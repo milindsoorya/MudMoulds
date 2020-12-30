@@ -58,6 +58,12 @@ function Contact() {
                 Kerala
               </h6>
             </div>
+            <div className={styles.mapContainer}>
+              <iframe
+                className={styles.map}
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Anaswaram%20kitchen%20products%20and%20murals+(Mudmoulds)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
             <div className={styles.linksContainer}>
               <FiPhone className={styles.icons} />
               <h6>
