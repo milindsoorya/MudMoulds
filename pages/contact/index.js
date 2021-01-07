@@ -68,7 +68,6 @@ function Contact() {
               <FiPhone className={styles.icons} />
               <h6>
                 +91 9778375095 <img src="images/whatsappLogo.png" /> <br />
-                +91 7090077369
               </h6>
             </div>
             <div className={styles.linksContainer}>
